@@ -22,7 +22,7 @@ spec:
       - name: skip-checks
         value: "$(params.skip-checks)"
     - name: clone-repository
-      git push origin HEAD::
+      taskRef:
         resolver: bundles
         params:
         - name: name
